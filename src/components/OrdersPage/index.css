@@ -1,0 +1,37 @@
+.orders-container {
+  display: flex;
+  justify-content: center;
+  min-height: 75vh;
+}
+
+@media screen and (min-width: 768px) {
+  .orders-container {
+    min-height: 90vh;
+  }
+}
+
+.orders-content-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1110px;
+}
+
+@media screen and (min-width: 768px) {
+  .orders-content-container {
+    width: 80%;
+    max-width: 1110px;
+  }
+}
+
+.orders-heading {
+  color: #3e4c59;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .orders-heading {
+    font-size: 48px;
+  }
+}
