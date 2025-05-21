@@ -37,7 +37,7 @@ class LoginForm extends Component {
     event.preventDefault()
     const {username, password} = this.state
     const userDetails = {username, password}
-    const url = '/login'
+    const url = 'https://nxttrendzauth.onrender.com/login'
     const options = {
       method: 'POST',
       headers: {
