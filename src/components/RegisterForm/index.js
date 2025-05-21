@@ -33,7 +33,7 @@ class RegisterForm extends Component {
     event.preventDefault()
     const {username, password} = this.state
     const userDetails = {username, password}
-    const url = '/register'
+    const url = 'https://nxttrendzauth.onrender.com/register'
     const options = {
       method: 'POST',
       headers: {
