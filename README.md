@@ -180,6 +180,10 @@ Use these files to complete the implementation:
 > - All components you implement should go in the `src/components` directory.
 > - Don't change the component folder names as those are the files being imported into the tests.
 > - **Do not remove the pre-filled code**
-> 
-**>Most Challenging Problem Solved – Trendora (E-commerce Platform)**
-> - One of the most challenging problems I solved while building Trendora, a MERN-based e-commerce application, was implementing a reliable cart and inventory synchronization system. The main issue was ensuring that product quantities updated correctly in real time as users added or removed items from their carts. I resolved this by designing optimized REST APIs and leveraging MongoDB atomic operations to prevent inconsistent inventory updates during concurrent user actions. Another major challenge was implementing a fast and efficient product filtering and search feature that allowed multi-category filtering, price-based sorting, and keyword search without compromising performance. To support this, I optimized database queries and improved frontend state management so cart updates and product listings rendered smoothly across the application. This problem strengthened my understanding of backend optimization, database design, and building scalable e-commerce workflows.
+> **Most Challenging Problem Solved – Cart & Inventory Synchronization**
+
+One of the most challenging problems I solved while developing Trendora, a MERN-based e-commerce platform, was implementing a reliable and real-time cart and inventory synchronization mechanism. The difficulty came from ensuring that product quantities remained accurate when multiple users added or removed items simultaneously. To solve this, I used MongoDB atomic operations ($inc, $set, $pull) to prevent race conditions and built optimized REST APIs that validated inventory levels before finalizing updates. I also refactored the backend logic to ensure consistency during concurrent requests, ensuring that the cart always reflected the most up-to-date product quantities.
+
+Another challenge was building a high-performance filtering and search system. I optimized database queries using indexed fields and designed a multi-criteria filtering pipeline that allowed category filters, price sorting, and keyword search to work smoothly together. On the frontend, I improved state management with efficient update triggers so that cart actions and product listings updated instantly and without lag.
+
+These improvements enhanced the platform’s scalability and strengthened my skills in backend optimization, API design, and real-time state management across full-stack applications.
