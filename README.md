@@ -179,7 +179,7 @@ Use these files to complete the implementation:
 >
 > - All components you implement should go in the `src/components` directory.
 > - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
+>   
 > **Most Challenging Problem Solved – Cart & Inventory Synchronization**
 
 One of the most challenging problems I solved while developing Trendora, a MERN-based e-commerce platform, was implementing a reliable and real-time cart and inventory synchronization mechanism. The difficulty came from ensuring that product quantities remained accurate when multiple users added or removed items simultaneously. To solve this, I used MongoDB atomic operations ($inc, $set, $pull) to prevent race conditions and built optimized REST APIs that validated inventory levels before finalizing updates. I also refactored the backend logic to ensure consistency during concurrent requests, ensuring that the cart always reflected the most up-to-date product quantities.
